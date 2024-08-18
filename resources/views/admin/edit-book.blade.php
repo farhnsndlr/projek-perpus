@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="admin/dashboard">
+                <a class="nav-link" href="/admin/dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -167,6 +167,10 @@
                             <div class="mb-3">
                                 <label for="title" class="form-label">Book Title</label>
                                 <input type="text" name="title" id="title" class="form-control" placeholder="Book Title" value="{{ $book->title }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="author" class="form-label">Author</label>
+                                <input type="text" name="author" id="author" class="form-control" placeholder="Author" value="{{ $book->author }}">
                             </div>
                             <div class="mb-3">
                                 <label for="image" class="form-label">Book Cover</label>

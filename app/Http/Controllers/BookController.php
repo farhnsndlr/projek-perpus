@@ -69,12 +69,16 @@ class BookController extends Controller
         
     }
 
-    
-
     public function delete($slug)
     {
         $book = Book::where('slug', $slug)->first();
         $book->forceDelete();
         return redirect('/admin/books')->with('status', 'Successfully Deleted'); 
+    }
+
+    public function bookList()
+    {
+        $books = Book::all();
+        return view('main.books', ['books' => $books]);
     }
 }

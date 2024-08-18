@@ -164,8 +164,8 @@
                                 <tr>
                                     <th>No. </th>
                                     <th>Book Code</th>
-                                    
                                     <th>Book Title</th>
+                                    <th>Author</th>
                                     <th>Status</th>
                                     <th>Action</th>  
                                 </tr>
@@ -175,8 +175,8 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $item->book_code }}</td>
-                                    
                                     <td>{{ $item->title }}</td>
+                                    <td>{{ $item->author }}</td>
                                     <td>{{ $item->status }}</td>
                                 
                                     <div class="btn-group">

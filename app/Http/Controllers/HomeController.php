@@ -12,12 +12,10 @@ class HomeController extends Controller
     {
         $bookCount = Book::count();
         $categoryCount = Category::count();
-        return view('admin.dashboard', ['book_count' => $bookCount, 'category_count' => $categoryCount]);
+        
+        return view('admin.dashboard', ['books_count' => $bookCount, 'category_count' => $categoryCount]);
     }
 
-    public function userDashboard()
-    {
-        return view('main.dashboard');
-    }
+   
    
 }

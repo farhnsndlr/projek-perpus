@@ -169,6 +169,11 @@
                                 <input type="text" name="title" id="title" class="form-control" placeholder="Book Title">
                             </div>
                             <div class="mb-3">
+                                <label for="author" class="form-label">Author</label>
+                                <input type="text" name="author" id="author" class="form-control" placeholder="Author">
+                            </div>
+
+                            <div class="mb-3">
                                 <label for="image" class="form-label">Book Cover</label>
                                 <input type="file" name="image" class="form-control">
                             </div>
