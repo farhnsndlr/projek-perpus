@@ -42,15 +42,20 @@ Route::middleware(['auth', 'admin'])->group(function () {
     route::get('/admin/delete-category/{slug}',[CategoryController::class, 'delete']);
 
     route::get('/admin/logs',[RentController::class, 'logs']);
+
+    route::get('/admin/return-book',[RentController::class, 'returnBook']);
+    route::post('/admin/return-book',[RentController::class, 'saveReturnBook']);
     
    
 Route::middleware(['auth', 'member'])->group(function () {
     
     route::get('/main/books',[BookController::class, 'bookList']);
+
     route::get('/main/rent',[RentController::class, 'index']);
     route::post('/main/rent',[RentController::class, 'store']);
 
     route::get('/main/dashboard' ,[MemberController::class, 'show']);
+   
 });
     
     

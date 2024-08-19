@@ -20,8 +20,8 @@ class MemberController extends Controller
     {
         $bookCount = Book::count();
         $user_id = Auth::user()->id;
-        $rentlogs = Rent::with('user', 'book')->where('id', $user_id)->get();
-        return view('main.dashboard', ['rent_logs' => $rentlogs, 'books_count' => $bookCount]);
+        $rentlogs = Rent::with('user', 'book')->where('user_id', $user_id)->get();
+        return view('/main/dashboard', ['rent_logs' => $rentlogs, 'books_count' => $bookCount]);
 }
 
 }
