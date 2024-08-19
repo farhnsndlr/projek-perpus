@@ -34,16 +34,42 @@
                     <div class="col-xl-6">
                         <div class="text-center text-white">
                             <!-- Page heading-->
-                            <h1 class="mb-5">Peminjaman Buku Online</h1>
+                            <h1 class="mb-5">Online Book Rental</h1>
                             <p>"Books are the plane, and with them you can fly to anywhere in the world without leaving your room." - Markus Zusak</p>
-                            
-                           
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         
+        <!-- Features section-->
+        <section class="features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-book m-auto text-primary"></i></div>
+                            <h3>Lots of Books</h3>
+                            <p class="lead mb-0">We have lots of books</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-calendar-event m-auto text-primary"></i></div>
+                            <h3>Rental</h3>
+                            <p class="lead mb-0">Rent the book that you want!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-search m-auto text-primary"></i></div>
+                            <h3>Search</h3>
+                            <p class="lead mb-0">Find the book that you're looking for</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
        
         <!-- Footer-->
         <footer class="footer bg-light">

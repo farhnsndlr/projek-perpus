@@ -173,6 +173,11 @@
         });
     });
     </script>
+    <script>
+        $(document).ready(function() {
+            $('.input-box').select2();
+        });
+        </script>
 </body>
 
 </html>
